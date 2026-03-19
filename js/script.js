@@ -71,3 +71,12 @@ document.querySelectorAll(".music-card").forEach((card) => {
     if (isDragging) e.preventDefault();
   });
 });
+
+const cards = document.querySelectorAll(".playlist-card");
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    cards.forEach((c) => c.classList.remove("active"));
+    card.classList.add("active");
+  });
+});
