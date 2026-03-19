@@ -646,13 +646,7 @@ p {
   gap: 10px;
   margin-bottom: 12px;
 }
-.tag {
-  border: 1px solid #6c63ff;
-  color: #6c63ff;
-  padding: 2px 8px;
-  border-radius: 20px;
-  font-size: 12px;
-}
+
 .date {
   font-size: 14px;
   color: #ccc;
