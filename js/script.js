@@ -72,11 +72,10 @@ document.querySelectorAll(".music-card").forEach((card) => {
   });
 });
 
-const cards = document.querySelectorAll(".playlist-card");
+document.querySelectorAll(".playlist-summary").forEach((summary) => {
+  summary.addEventListener("click", () => {
+    const card = summary.parentElement;
 
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
-    cards.forEach((c) => c.classList.remove("active"));
-    card.classList.add("active");
+    card.classList.toggle("active"); /* 🔥 이게 핵심 */
   });
 });
